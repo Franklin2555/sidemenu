@@ -1,17 +1,26 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   
   <ion-toolbar color="new">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-back-button defaultHref="/" text="back"></ion-back-button>
+      
     </ion-buttons>
     <ion-title>inicio</ion-title>
   </ion-toolbar>
 
 </ion-header>
-  
+   -->
+   <app-headers titulo="inicio"></app-headers>
 <ion-content>
-  <div id="container">
+
+  <ion-list>
+    <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo" detail="tue">
+      <ion-icon slot="start" [name]='c.icon'></ion-icon>
+      {{c.name}}
+    </ion-item>
+  </ion-list>
+  <!-- <div id="container">
     <p><strong>Esta es mi pagima de inicio</strong> </p>
     <ion-button color="new" [routerLink]="['/clientes']">Ir a Clientes</ion-button>
-  </div>
+  </div> -->
 </ion-content>
