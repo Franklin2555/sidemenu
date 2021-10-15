@@ -15,6 +15,10 @@ export class AppComponent {
     { title: 'Clientes', url: '/clientes', icon: 'people' },
     { title: 'Acciones', url: '/accioness', icon: 'build' },
     { title: 'Alert', url: '/alert/', icon: 'alert' },
+    { title: 'Avatar', url: '/avatar/', icon: 'beaker' },
+    { title: 'Favoritos', url: '/favorito/', icon: 'star' },
+    { title: 'Tarjetas', url: '/card/', icon: 'card' },
+    { title: 'FAB', url: '/fab/', icon: 'card' },
   ];
   //public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

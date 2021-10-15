@@ -23,14 +23,34 @@ export class InicioPage implements OnInit {
   },
   { 
     icon:'alert',
-    name:'Ir a Alert',
+    name:' Alertas',
     redirectTo:'/alert'
   },
   { 
     icon:'basketball',
-    name:'Si funciona :)',
+    name:'Clientes',
     redirectTo:'/clientes'
-  }]
+  },
+  { 
+    icon:'beaker',
+    name:'Avatar',
+    redirectTo:'/avatar'
+  },
+  { 
+    icon:'star',
+    name:'Favoritos',
+    redirectTo:'/favorito'
+  },
+  { 
+    icon:'card',
+    name:'Tarjetas',
+    redirectTo:'/card'
+  },
+  { 
+    icon:'card',
+    name:'FAB',
+    redirectTo:'/fab'
+  },]
   constructor() { }
 
   ngOnInit() {
